@@ -11,3 +11,13 @@
 function twoSort(s) {
   return s.sort().split("").join("***")
 }
+
+// didnt work im missing something with the sort method
+
+// OTHER SOLUTIONS
+
+function twoSort(s) {
+  return s.sort()[0].split("").join("***")
+}
+
+twoSort = (s) => s.sort()[0].split("").join("***")
