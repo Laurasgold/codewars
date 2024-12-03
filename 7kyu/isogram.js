@@ -10,26 +10,22 @@
 // "moOse" --> false (ignore letter case)
 
 // MY SOLUTION:(failed)
-function isIsogram(str){
+function isIsogram(str) {
   let words = str.toLowerCase()
-  let letters = words.split(' ')
-  for (let i=0; i < letters.length; i++){
-    if{}
-    
+  let letters = words.split(" ")
+  for (let i = 0; i < letters.length; i++) {
+    //   if{}
+    // }
   }
-  
- 
- }
-
+}
 
 // OTHER SOLUTION:
-function isIsogram(str){
-	return new Set(str.toUpperCase()).size == str.length;
+function isIsogram(str) {
+  return new Set(str.toUpperCase()).size == str.length
 }
-// Set object lets you store unique values of any type, whether primitive values or object references. A value in the set may only occur once; it is unique in the set's collection. 
+// Set object lets you store unique values of any type, whether primitive values or object references. A value in the set may only occur once; it is unique in the set's collection.
 
-function isIsogram(str){ 
+function isIsogram(str) {
   return !/(\w).*\1/i.test(str)
 }
 // ?????
-
